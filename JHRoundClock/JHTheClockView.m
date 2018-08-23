@@ -14,6 +14,8 @@
 #define ViewR ((ViewHeight/2)-0)
 #define angle2RADIAN(X) ((X)/180.0*M_PI)
 @interface JHTheClockView ()
+@property(nonatomic,strong) CALayer *bgLayer;
+
 @property(nonatomic,strong) CAShapeLayer *hoursLayer;
 @property(nonatomic,strong) CAShapeLayer *minuteLayer;
 @property(nonatomic,strong) CAShapeLayer *secondLayer;
@@ -37,6 +39,7 @@
     }
     return self;
 }
+
 -(instancetype)initWithFrame:(CGRect)frame{
     if ([super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];
@@ -53,6 +56,7 @@
 {
     if ([super initWithCoder:aDecoder]) {
         self.backgroundColor = [UIColor clearColor];
+
         self.theDialColor = [UIColor blackColor];
         self.hourColor = [UIColor blackColor];
         self.minuteColor = [UIColor blueColor];
@@ -63,7 +67,9 @@
     return self;
 }
 -(void)addUI{
+    
     CGPoint center = CGPointMake(ViewWidth*0.5, ViewHeight*0.5);
+
     //60格分针刻度
     CAShapeLayer *smillLayer = [CAShapeLayer layer];
     UIBezierPath *smillpath = [UIBezierPath bezierPath];
@@ -113,6 +119,16 @@
     backGroundLayer.fillColor = [UIColor clearColor].CGColor;
     
     [self.layer addSublayer:backGroundLayer];
+    
+    
+    CALayer *bgImageLayer = [CALayer layer];
+    bgImageLayer.bounds = CGRectMake(0, 0, ViewWidth, ViewHeight);
+    
+    bgImageLayer.anchorPoint = CGPointMake(0.5, 0.5);
+    bgImageLayer.position = CGPointMake(ViewWidth*0.5, ViewHeight*0.5);
+    bgImageLayer.contents = (id)[UIImage imageNamed:@"钟表"].CGImage;
+    
+    [self.layer addSublayer:bgImageLayer];
     
 }
 -(void)addHours{
@@ -203,7 +219,7 @@
     CGFloat sec = compoents.second;
     CGFloat minute = compoents.minute;
     CGFloat hour = compoents.hour;
-    NSLog(@"%f:%f:%f",hour,minute,sec);
+//    NSLog(@"%f:%f:%f",hour,minute,sec);
     CGFloat secondA = sec * 6;
     CGFloat minuteA = minute * 6;
 //    算出时针一格旋转多少度
@@ -230,10 +246,12 @@
     [self addSec];
     [self addMinute];
     [self addHours];
+
     [self addCenter];
     
 
     [self upDate];
+
 }
 
 -(void)removeLayer{

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D4FE2B2212E594F0036019D /* ClockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FE2B0212E594F0036019D /* ClockCell.m */; };
+		9D4FE2B3212E594F0036019D /* ClockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4FE2B1212E594F0036019D /* ClockCell.xib */; };
 		E5221454212DB65C003F359E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5221453212DB65C003F359E /* AppDelegate.m */; };
 		E5221457212DB65C003F359E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5221456212DB65C003F359E /* ViewController.m */; };
 		E522145A212DB65C003F359E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5221458212DB65C003F359E /* Main.storyboard */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D4FE2AF212E594F0036019D /* ClockCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockCell.h; sourceTree = "<group>"; };
+		9D4FE2B0212E594F0036019D /* ClockCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockCell.m; sourceTree = "<group>"; };
+		9D4FE2B1212E594F0036019D /* ClockCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockCell.xib; sourceTree = "<group>"; };
 		E522144F212DB65C003F359E /* JHRoundClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHRoundClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5221452212DB65C003F359E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5221453212DB65C003F359E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +115,9 @@
 				E5221453212DB65C003F359E /* AppDelegate.m */,
 				E5221455212DB65C003F359E /* ViewController.h */,
 				E5221456212DB65C003F359E /* ViewController.m */,
+				9D4FE2AF212E594F0036019D /* ClockCell.h */,
+				9D4FE2B0212E594F0036019D /* ClockCell.m */,
+				9D4FE2B1212E594F0036019D /* ClockCell.xib */,
 				E5221458212DB65C003F359E /* Main.storyboard */,
 				E522145B212DB65E003F359E /* Assets.xcassets */,
 				E522145D212DB65E003F359E /* LaunchScreen.storyboard */,
@@ -242,6 +250,7 @@
 			files = (
 				E522145F212DB65E003F359E /* LaunchScreen.storyboard in Resources */,
 				E522145C212DB65E003F359E /* Assets.xcassets in Resources */,
+				9D4FE2B3212E594F0036019D /* ClockCell.xib in Resources */,
 				E522145A212DB65C003F359E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5221457212DB65C003F359E /* ViewController.m in Sources */,
+				9D4FE2B2212E594F0036019D /* ClockCell.m in Sources */,
 				E5221486212DB66C003F359E /* JHTheClockView.m in Sources */,
 				E5221462212DB65E003F359E /* main.m in Sources */,
 				E5221454212DB65C003F359E /* AppDelegate.m in Sources */,
@@ -440,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CG97ZKD4F6;
 				INFOPLIST_FILE = JHRoundClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CG97ZKD4F6;
 				INFOPLIST_FILE = JHRoundClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
