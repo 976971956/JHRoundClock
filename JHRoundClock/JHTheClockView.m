@@ -18,6 +18,8 @@
 @property(nonatomic,strong) CAShapeLayer *minuteLayer;
 @property(nonatomic,strong) CAShapeLayer *secondLayer;
 @property(nonatomic,strong) CATextLayer *textLayer;
+@property(nonatomic,strong) NSTimer *timer;
+
 @end
 @implementation JHTheClockView
 
@@ -26,7 +28,12 @@
     self = [super init];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-
+        self.theDialColor = [UIColor blackColor];
+        self.hourColor = [UIColor blackColor];
+        self.minuteColor = [UIColor blueColor];
+        self.secondColor = [UIColor redColor];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(upDate) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
     return self;
 }
@@ -37,6 +44,8 @@
         self.hourColor = [UIColor blackColor];
         self.minuteColor = [UIColor blueColor];
         self.secondColor = [UIColor redColor];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(upDate) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
     return self;
 }
@@ -44,13 +53,18 @@
 {
     if ([super initWithCoder:aDecoder]) {
         self.backgroundColor = [UIColor clearColor];
-
+        self.theDialColor = [UIColor blackColor];
+        self.hourColor = [UIColor blackColor];
+        self.minuteColor = [UIColor blueColor];
+        self.secondColor = [UIColor redColor];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(upDate) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
     return self;
 }
 -(void)addUI{
     CGPoint center = CGPointMake(ViewWidth*0.5, ViewHeight*0.5);
-    
+    //60格分针刻度
     CAShapeLayer *smillLayer = [CAShapeLayer layer];
     UIBezierPath *smillpath = [UIBezierPath bezierPath];
     for (int i = 0 ; i<60; i++) {
@@ -65,16 +79,18 @@
     smillLayer.fillColor = [UIColor clearColor].CGColor;
     [self.layer addSublayer:smillLayer];
     
+//    12格时针刻度和标识
     CAShapeLayer *momentLayer = [CAShapeLayer layer];
     UIBezierPath *momentpath = [UIBezierPath bezierPath];
     NSArray *arr = @[@"12",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11"];
     for (int i = 0 ; i<arr.count; i++) {
+//        刻度
         CGPoint pos = [self getRoundPointR:ViewR angle:-90+30*i];
         CGPoint pos1 = [self getRoundPointR:ViewR-8 angle:-90+30*i];
         
         [momentpath moveToPoint:CGPointMake(pos.x, pos.y)];
         [momentpath addLineToPoint:CGPointMake(pos1.x, pos1.y)];
-        
+//       标识
         CGPoint pos2 = [self getRoundPointR:ViewR-16 angle:-90+30*i];
         NSString *str = arr[i];
         NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithObject:[UIFont systemFontOfSize:14] forKey:NSFontAttributeName];
@@ -88,7 +104,7 @@
     momentLayer.strokeColor = self.theDialColor.CGColor;
     momentLayer.fillColor = [UIColor clearColor].CGColor;
     [self.layer addSublayer:momentLayer];
-    
+//    表盘外圆
     CAShapeLayer *backGroundLayer = [CAShapeLayer layer];
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:ViewR startAngle:-M_PI_2 endAngle:-M_PI_2+M_PI_2*4 clockwise:YES];
     backGroundLayer.path = path.CGPath;
@@ -216,7 +232,7 @@
     [self addHours];
     [self addCenter];
     
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(upDate) userInfo:nil repeats:YES];
+
     [self upDate];
 }
 
@@ -230,27 +246,32 @@
     }];
     
 }
+-(void)upDateColor{
+//    self.hoursLayer.strokeColor = self.hourColor.CGColor;
+//    self.hoursLayer.fillColor = self.hourColor.CGColor;
+//    self.minuteLayer.strokeColor = self.minuteColor.CGColor;
+//    self.minuteLayer.fillColor = self.minuteColor.CGColor;
+//    self.secondLayer.strokeColor =self.secondColor.CGColor;
+//    self.secondLayer.fillColor = self.secondColor.CGColor;
+
+}
 -(void)setHourColor:(UIColor *)hourColor{
     _hourColor = hourColor;
-    [self removeLayer];
-    [self setNeedsDisplay];
+    [self upDateColor];
 }
 -(void)setMinuteColor:(UIColor *)minuteColor{
     _minuteColor = minuteColor;
-    [self removeLayer];
-    [self setNeedsDisplay];
+    [self upDateColor];
 
 }
 -(void)setSecondColor:(UIColor *)secondColor{
     _secondColor = secondColor;
-    [self removeLayer];
-    [self setNeedsDisplay];
+    [self upDateColor];
 
 }
 -(void)setTheDialColor:(UIColor *)theDialColor{
     _theDialColor = theDialColor;
-    [self removeLayer];
-    [self setNeedsDisplay];
+    [self upDateColor];
 
 }
 @end
