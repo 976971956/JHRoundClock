@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5221454212DB65C003F359E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5221453212DB65C003F359E /* AppDelegate.m */; };
+		E5221457212DB65C003F359E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5221456212DB65C003F359E /* ViewController.m */; };
+		E522145A212DB65C003F359E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5221458212DB65C003F359E /* Main.storyboard */; };
+		E522145C212DB65E003F359E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E522145B212DB65E003F359E /* Assets.xcassets */; };
+		E522145F212DB65E003F359E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E522145D212DB65E003F359E /* LaunchScreen.storyboard */; };
+		E5221462212DB65E003F359E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5221461212DB65E003F359E /* main.m */; };
+		E522146C212DB65E003F359E /* JHRoundClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E522146B212DB65E003F359E /* JHRoundClockTests.m */; };
+		E5221477212DB65E003F359E /* JHRoundClockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5221476212DB65E003F359E /* JHRoundClockUITests.m */; };
+		E5221486212DB66C003F359E /* JHTheClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5221485212DB66C003F359E /* JHTheClockView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5221468212DB65E003F359E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5221447212DB65C003F359E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E522144E212DB65C003F359E;
+			remoteInfo = JHRoundClock;
+		};
+		E5221473212DB65E003F359E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5221447212DB65C003F359E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E522144E212DB65C003F359E;
+			remoteInfo = JHRoundClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E522144F212DB65C003F359E /* JHRoundClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHRoundClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5221452212DB65C003F359E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5221453212DB65C003F359E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5221455212DB65C003F359E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5221456212DB65C003F359E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E5221459212DB65C003F359E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E522145B212DB65E003F359E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E522145E212DB65E003F359E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5221460212DB65E003F359E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5221461212DB65E003F359E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5221467212DB65E003F359E /* JHRoundClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHRoundClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E522146B212DB65E003F359E /* JHRoundClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHRoundClockTests.m; sourceTree = "<group>"; };
+		E522146D212DB65E003F359E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5221472212DB65E003F359E /* JHRoundClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHRoundClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5221476212DB65E003F359E /* JHRoundClockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHRoundClockUITests.m; sourceTree = "<group>"; };
+		E5221478212DB65E003F359E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5221484212DB66C003F359E /* JHTheClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTheClockView.h; sourceTree = "<group>"; };
+		E5221485212DB66C003F359E /* JHTheClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTheClockView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E522144C212DB65C003F359E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5221464212DB65E003F359E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E522146F212DB65E003F359E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5221446212DB65C003F359E = {
+			isa = PBXGroup;
+			children = (
+				E5221451212DB65C003F359E /* JHRoundClock */,
+				E522146A212DB65E003F359E /* JHRoundClockTests */,
+				E5221475212DB65E003F359E /* JHRoundClockUITests */,
+				E5221450212DB65C003F359E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5221450212DB65C003F359E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E522144F212DB65C003F359E /* JHRoundClock.app */,
+				E5221467212DB65E003F359E /* JHRoundClockTests.xctest */,
+				E5221472212DB65E003F359E /* JHRoundClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5221451212DB65C003F359E /* JHRoundClock */ = {
+			isa = PBXGroup;
+			children = (
+				E5221484212DB66C003F359E /* JHTheClockView.h */,
+				E5221485212DB66C003F359E /* JHTheClockView.m */,
+				E5221452212DB65C003F359E /* AppDelegate.h */,
+				E5221453212DB65C003F359E /* AppDelegate.m */,
+				E5221455212DB65C003F359E /* ViewController.h */,
+				E5221456212DB65C003F359E /* ViewController.m */,
+				E5221458212DB65C003F359E /* Main.storyboard */,
+				E522145B212DB65E003F359E /* Assets.xcassets */,
+				E522145D212DB65E003F359E /* LaunchScreen.storyboard */,
+				E5221460212DB65E003F359E /* Info.plist */,
+				E5221461212DB65E003F359E /* main.m */,
+			);
+			path = JHRoundClock;
+			sourceTree = "<group>";
+		};
+		E522146A212DB65E003F359E /* JHRoundClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				E522146B212DB65E003F359E /* JHRoundClockTests.m */,
+				E522146D212DB65E003F359E /* Info.plist */,
+			);
+			path = JHRoundClockTests;
+			sourceTree = "<group>";
+		};
+		E5221475212DB65E003F359E /* JHRoundClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5221476212DB65E003F359E /* JHRoundClockUITests.m */,
+				E5221478212DB65E003F359E /* Info.plist */,
+			);
+			path = JHRoundClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E522144E212DB65C003F359E /* JHRoundClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E522147B212DB65E003F359E /* Build configuration list for PBXNativeTarget "JHRoundClock" */;
+			buildPhases = (
+				E522144B212DB65C003F359E /* Sources */,
+				E522144C212DB65C003F359E /* Frameworks */,
+				E522144D212DB65C003F359E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHRoundClock;
+			productName = JHRoundClock;
+			productReference = E522144F212DB65C003F359E /* JHRoundClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5221466212DB65E003F359E /* JHRoundClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E522147E212DB65E003F359E /* Build configuration list for PBXNativeTarget "JHRoundClockTests" */;
+			buildPhases = (
+				E5221463212DB65E003F359E /* Sources */,
+				E5221464212DB65E003F359E /* Frameworks */,
+				E5221465212DB65E003F359E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5221469212DB65E003F359E /* PBXTargetDependency */,
+			);
+			name = JHRoundClockTests;
+			productName = JHRoundClockTests;
+			productReference = E5221467212DB65E003F359E /* JHRoundClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5221471212DB65E003F359E /* JHRoundClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5221481212DB65E003F359E /* Build configuration list for PBXNativeTarget "JHRoundClockUITests" */;
+			buildPhases = (
+				E522146E212DB65E003F359E /* Sources */,
+				E522146F212DB65E003F359E /* Frameworks */,
+				E5221470212DB65E003F359E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5221474212DB65E003F359E /* PBXTargetDependency */,
+			);
+			name = JHRoundClockUITests;
+			productName = JHRoundClockUITests;
+			productReference = E5221472212DB65E003F359E /* JHRoundClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5221447212DB65C003F359E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "江湖";
+				TargetAttributes = {
+					E522144E212DB65C003F359E = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					E5221466212DB65E003F359E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E522144E212DB65C003F359E;
+					};
+					E5221471212DB65E003F359E = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = E522144E212DB65C003F359E;
+					};
+				};
+			};
+			buildConfigurationList = E522144A212DB65C003F359E /* Build configuration list for PBXProject "JHRoundClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5221446212DB65C003F359E;
+			productRefGroup = E5221450212DB65C003F359E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E522144E212DB65C003F359E /* JHRoundClock */,
+				E5221466212DB65E003F359E /* JHRoundClockTests */,
+				E5221471212DB65E003F359E /* JHRoundClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E522144D212DB65C003F359E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E522145F212DB65E003F359E /* LaunchScreen.storyboard in Resources */,
+				E522145C212DB65E003F359E /* Assets.xcassets in Resources */,
+				E522145A212DB65C003F359E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5221465212DB65E003F359E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5221470212DB65E003F359E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E522144B212DB65C003F359E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5221457212DB65C003F359E /* ViewController.m in Sources */,
+				E5221486212DB66C003F359E /* JHTheClockView.m in Sources */,
+				E5221462212DB65E003F359E /* main.m in Sources */,
+				E5221454212DB65C003F359E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5221463212DB65E003F359E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E522146C212DB65E003F359E /* JHRoundClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E522146E212DB65E003F359E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5221477212DB65E003F359E /* JHRoundClockUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5221469212DB65E003F359E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E522144E212DB65C003F359E /* JHRoundClock */;
+			targetProxy = E5221468212DB65E003F359E /* PBXContainerItemProxy */;
+		};
+		E5221474212DB65E003F359E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E522144E212DB65C003F359E /* JHRoundClock */;
+			targetProxy = E5221473212DB65E003F359E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5221458212DB65C003F359E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5221459212DB65C003F359E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E522145D212DB65E003F359E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E522145E212DB65E003F359E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5221479212DB65E003F359E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E522147A212DB65E003F359E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E522147C212DB65E003F359E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JHRoundClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jh.JHRoundClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E522147D212DB65E003F359E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JHRoundClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jh.JHRoundClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E522147F212DB65E003F359E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JHRoundClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jh.JHRoundClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JHRoundClock.app/JHRoundClock";
+			};
+			name = Debug;
+		};
+		E5221480212DB65E003F359E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JHRoundClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jh.JHRoundClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JHRoundClock.app/JHRoundClock";
+			};
+			name = Release;
+		};
+		E5221482212DB65E003F359E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JHRoundClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jh.JHRoundClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JHRoundClock;
+			};
+			name = Debug;
+		};
+		E5221483212DB65E003F359E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JHRoundClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jh.JHRoundClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JHRoundClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E522144A212DB65C003F359E /* Build configuration list for PBXProject "JHRoundClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5221479212DB65E003F359E /* Debug */,
+				E522147A212DB65E003F359E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E522147B212DB65E003F359E /* Build configuration list for PBXNativeTarget "JHRoundClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E522147C212DB65E003F359E /* Debug */,
+				E522147D212DB65E003F359E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E522147E212DB65E003F359E /* Build configuration list for PBXNativeTarget "JHRoundClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E522147F212DB65E003F359E /* Debug */,
+				E5221480212DB65E003F359E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5221481212DB65E003F359E /* Build configuration list for PBXNativeTarget "JHRoundClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5221482212DB65E003F359E /* Debug */,
+				E5221483212DB65E003F359E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5221447212DB65C003F359E /* Project object */;
+}
